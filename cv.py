@@ -10,6 +10,7 @@ class UIMatcher:
         """
         # 获取对应货物的图片。
         # 有个要点：通过截屏制作货物图片时，请在快照为实际大小的模式下截屏。
+        print("Hello World"+target.value)  
         template = cv2.imread(target.value)
         # 获取货物图片的宽高。
         th, tw = template.shape[:2]
